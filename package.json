@@ -1,0 +1,26 @@
+{
+  "name": "scribe-plugin-sanitize-google-doc",
+  "version": "1.0.0",
+  "description": "A Scribe plugin for sanitizing html pasted from Google Docs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craigspaeth/scribe-plugin-sanitize-google-doc.git"
+  },
+  "keywords": [
+    "scribe",
+    "plugin",
+    "sanitize",
+    "google",
+    "docs"
+  ],
+  "author": "Craig Spaeth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craigspaeth/scribe-plugin-sanitize-google-doc/issues"
+  },
+  "homepage": "https://github.com/craigspaeth/scribe-plugin-sanitize-google-doc"
+}
