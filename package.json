@@ -1,6 +1,6 @@
 {
   "name": "scribe-plugin-sanitize-google-doc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Scribe plugin for sanitizing html pasted from Google Docs",
   "main": "index.js",
   "scripts": {
