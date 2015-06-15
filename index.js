@@ -50,10 +50,15 @@
         traverse(el);
         if(el.nodeName == 'SPAN') {
           if (el.style.fontWeight == 'bold') {
-            el.style.removeProperty('font');
+            if(el.style.fontStyle == 'italic'){
+              el.removeAttribute('style');
+              el.style.fontStyle = 'italic';
+            }else{
+              el.removeAttribute('style');
+            }
             replaceNode(el, 'B');
           } else if (el.style.fontStyle == 'italic') {
-            el.style.removeProperty('font');
+            el.removeAttribute('style');
             replaceNode(el, 'I');
           }
         }
