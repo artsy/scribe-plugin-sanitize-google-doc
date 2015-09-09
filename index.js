@@ -49,15 +49,15 @@
         nextSibling = el.nextElementSibling;
         traverse(el);
         if(el.nodeName == 'SPAN') {
-          if (el.style.fontWeight == 'bold') {
-            if(el.style.fontStyle == 'italic'){
+          if (el.style.fontWeight === 'bold' || el.style.fontWeight === '700') {
+            if(el.style.fontStyle === 'italic'){
               el.removeAttribute('style');
               el.style.fontStyle = 'italic';
             }else{
               el.removeAttribute('style');
             }
             replaceNode(el, 'B');
-          } else if (el.style.fontStyle == 'italic') {
+          } else if (el.style.fontStyle === 'italic') {
             el.removeAttribute('style');
             replaceNode(el, 'I');
           }
