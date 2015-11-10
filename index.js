@@ -52,11 +52,15 @@
           if (el.style.fontWeight === 'bold' || el.style.fontWeight === '700') {
             if(el.style.fontStyle === 'italic'){
               el.removeAttribute('style');
-              el.style.fontStyle = 'italic';
+              var newNode = document.createElement('B');
+              var copy = el.cloneNode(true);
+              newNode.appendChild(copy);
+              replaceNode(copy, 'I');
+              el.parentNode.replaceChild(newNode, el);
             }else{
               el.removeAttribute('style');
+              replaceNode(el, 'B');
             }
-            replaceNode(el, 'B');
           } else if (el.style.fontStyle === 'italic') {
             el.removeAttribute('style');
             replaceNode(el, 'I');
